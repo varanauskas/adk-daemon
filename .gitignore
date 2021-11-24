@@ -1,0 +1,15 @@
+aidosd.db
+aidosd.log
+adkd
+adkd.exe
+aidosd.exe
+aidosd.db.lock
+*.bak
+transactions.dat
+seed.enc
+noti.txt
+balances.dat
+aidosd_test.go
+aidosd.exe~
+aidosd.daemon.log
+adk-daemon.exe
