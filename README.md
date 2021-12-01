@@ -44,7 +44,7 @@ for details about incompatibilities with Bitcoin APIs.
 	$ mkdir src
 	$ mkdir bin
 	$ mkdir pkg
-	$ exoprt GOPATH=`pwd`
+	$ export GOPATH=`pwd`
 	$ cd src
 	$ go get -u github.com/AidosKuneen/adk-daemon
 	$ cd github.com/AidosKuneen/adk-daemon
