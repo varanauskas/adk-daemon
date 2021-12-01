@@ -32,8 +32,13 @@
   var privileged bool
   var pmutex sync.RWMutex
 
+  var send_mutex sync.RWMutex
+
   func send(acc string, conf *Conf, trs []gadk.Transfer) (gadk.Trytes, error) {
   	var mwm int64 = 15
+    //
+    send_mutex.Lock()
+  	defer send_mutex.Unlock()
     //
     inputs := []gadk.AddressInfo{}
     addressDirty := []gadk.Address{}
